@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
+import 'package:localdatabase/models/produit.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -8,6 +9,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   Box<dynamic> box;
+  Produit produit;
   @override
   void initState() {
     super.initState();
